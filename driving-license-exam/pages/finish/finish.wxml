@@ -1,0 +1,18 @@
+<import src="../../component/question.wxml"/>
+
+<view class="dle">
+	<view class="finish">
+		<view class="header">
+			<view class="title-left header-item" bindtap="goHome">去首页</view>
+			<view class="title-center header-item">{{model}} 科目{{subject}} {{testType}}</view>
+			<view class="title-right header-item" bindtap="goCheckError">查看错题</view>
+		</view>
+		<view class="dle-body">
+			<view class="finish">
+				<view class="total">您答对了{{total}}道题中的{{correct}}道</view>
+				<view class="percentage">正确率为{{percentage}}</view>
+				<view class="title">您的封号为{{title}}</view>
+			</view>
+		</view>
+	</view>
+</view>

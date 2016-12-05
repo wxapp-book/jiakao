@@ -1,0 +1,29 @@
+.dle{
+
+}
+.dle .header{
+	display: flex;
+	position: fixed;
+	height: 35px;
+	top: 0px;
+	width: 100%;
+	border-bottom: 1px solid #f0f0f0;
+	box-shadow: 0px 2px 5px #f0f0f5;
+	justify-content: center;
+	align-items: center;
+	z-index:310;
+	background-color: white;
+
+	/*text-align:center;*/
+}
+.dle .btn.btn-big{
+	width:100%;
+	border:1px green solid;
+	font-size:1rem;
+	height:1.2rem;
+}
+.dle .dle-body{
+	padding-top:100rpx;
+	width:100%;
+	margin: auto
+}

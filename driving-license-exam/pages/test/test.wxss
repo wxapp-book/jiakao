@@ -1,0 +1,135 @@
+@import "../../common/wxss/main.wxss"
+.test .header .header-item{
+	flex-grow:1;
+}
+.test .header .title-left{
+	text-align: left;
+}
+.test .header .title-center{
+	text-align: center;
+}
+.test .header .title-right{
+	text-align: right;
+}
+.test .go-finish{
+	color: crimson
+}
+.test .exam-swiper{
+	height:500px;
+}
+
+.test .selected{
+	background-color:#f6f6f6;
+}
+.test .correct{
+	background-color:darkseagreen;
+	background-image:url(https://www.wxapp-gateway.com/image/right.png);
+	background-repeat: no-repeat;
+	background-position: 97%;
+	background-size:20px;
+}
+.test .in-correct.selected{
+	background-color:tomato;
+	background-image:url(https://www.wxapp-gateway.com/image/wrong.png);
+	background-repeat: no-repeat;
+	background-position: 97%;
+	background-size:20px;
+}
+.test .page.show{
+	display:block;
+}
+.test .page.hide{
+	display: none;
+}
+.test .page{
+	/*height:550rpx;*/
+	padding-bottom: 50px;
+}
+.test .btn-group{
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	height: 100rpx;
+	line-height:100rpx;
+	border-top: 1px solid #f0f0f0;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px -1px 5px #f0f0f5;
+	flex-wrap: wrap;
+	background-color:white;
+}
+.test .question-view{
+	width:100%;
+}
+.test .picture{
+	width:100%;
+	height: 150px	
+}
+.test .do-answer{
+	height: 65rpx;
+width: 50%;
+background-color: green;
+text-align: center;
+margin: auto;
+line-height: 65rpx;
+border-radius:2px;
+margin-top:30px;
+color:white;
+background-color:#DAA520;
+
+}
+.test .answers{
+	display: flex;
+	flex-direction: column;
+	/*padding: 30rpx 30rpx 50rpx 30rpx;*/
+	font-size: 16px;
+	border-bottom:1px solid #f0f0f0;
+
+}
+.test .correct-answer{
+	font-size: 16px;
+	padding: 50rpx 30rpx 30rpx 30rpx;
+
+}
+.test .answer-explain{
+	padding-top:20rpx;
+}
+.test .percentage{
+	width: 100%;
+	align-self:flex-start
+}
+.test .answer-item{
+	height:40px;
+	line-height:40px;
+	padding-left:10px;
+	padding-right:10px;
+	border-bottom:1px solid #f0f0f0;
+}
+.test .question{
+	padding-left:10px;
+	padding-right:10px;
+	height:40px;
+	line-height: 40px;
+	border-bottom:2px solid #f0f0f0;
+}
+.test .bottomBtn{
+	height:20px;
+	border:1px solid black;
+	line-height: 20px;
+	width:70px;
+	text-align:center;
+	border-radius:4px;
+}
+.test .goPrev{
+	border-color:black;
+	margin-left:5px;
+
+}
+.test .goNext{
+	border-color:#DAA520;
+	color:#DAA520;
+	margin-right:5px;
+
+}

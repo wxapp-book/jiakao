@@ -1,0 +1,52 @@
+<template name="question-template">
+  <view class="question-view">
+      <block wx:if="{{pageData.url}}">
+           <view><!--渲染考题图片-->
+            <image class="picture" src="{{pageData.url}}" ></image>
+           </view>
+      </block>
+      <block wx:if="{{pageData.id}}"><!--渲染考题文案-->
+        <view class="question">{{pageData.index}}. {{pageData.question}}</view>
+      </block>
+      <view class="answers"><!--渲染答案-->
+      <block wx:if="{{pageData.item1}}"><!--选项有三种状态：未选中，已选中，判断后-->
+          <view class="item-1" data-value="1" data-item-id="{{pageData.id}}"  bindtap="selectItem" class="answer-item {{pageData.userSelect.item1}} {{pageData.correctAnswerMap.item1}}">A.{{pageData.item1}} </view>
+        </block>
+        <block wx:if="{{pageData.item2}}">
+          <view class="item-2" data-value="2" data-item-id="{{pageData.id}}"  bindtap="selectItem" class="answer-item {{pageData.userSelect.item2}} {{pageData.correctAnswerMap.item2}}">B.{{pageData.item2}}</view>
+        </block>
+        <block wx:if="{{pageData.item3}}">
+          <view class="item-3" data-value="3" data-item-id="{{pageData.id}}"  bindtap="selectItem" class="answer-item {{pageData.userSelect.item3}} {{pageData.correctAnswerMap.item3}}">C.{{pageData.item3}}</view>
+        </block>
+        <block wx:if="{{pageData.item4}}">
+          <view  class="item-4" data-value="4" data-item-id="{{pageData.id}}"  bindtap="selectItem" class="answer-item {{pageData.userSelect.item4}} {{pageData.correctAnswerMap.item4}}">D.{{pageData.item4}}</view>
+        </block>
+      </view>
+      <block wx:if="{{pageData.id}}"><!--提交答案按钮-->
+      <view class="do-answer" data-item-id="{{pageData.id}}" bindtap="doAnswer">确定</view>
+      </block>
+      <block wx:if="{{pageData.showExplains===true}}"><!--答案解释，用户未提交答案，或者答案正确，不会显示，只有答题错误才会显示-->
+        <view class="correct-answer">
+          <view class="answer-msg"><!--答案选项-->
+            正确答案:
+            <block wx:if="{{pageData.answer===1}}">
+              A.{{pageData.item1}}
+            </block>
+            <block wx:elif="{{pageData.answer===2}}">
+              B.{{pageData.item2}}
+            </block>
+            <block wx:elif="{{pageData.answer===3}}">
+              C.{{pageData.item3}}
+            </block>
+            <block wx:else="{{pageData.answer===4}}">
+              D.{{pageData.item4}}
+            </block>
+          </view>
+          <view class="answer-explain"><!--解释-->
+          答案释义:
+            {{pageData.explains}}
+          </view>
+        </view>
+      </block>
+  </view>
+</template>

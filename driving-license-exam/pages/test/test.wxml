@@ -1,0 +1,27 @@
+<import src="../../component/question.wxml"/>
+
+<view class="dle">
+	<view class="test">
+		<view class="header">
+			<view class="title-left header-item" ></view>
+			<view class="title-center header-item" >{{testModel}} 科目{{testSubject}} {{testType}}</view>
+			<view class="title-right header-item go-finish" bindtap="goFinish" >结束</view>
+		</view>
+		<view class="dle-body">
+			<view class="test">
+				<view data-block-name="1" class="{{page1.pageInfo.isCurrent}} {{page1.pageInfo.isShow}} page">
+					<template is="question-template" data="{{...page1}}"/>
+				</view>
+				<view data-block-name="2" class="{{page2.pageInfo.isCurrent}} {{page2.pageInfo.isShow}} page">
+					<template is="question-template" data="{{...page2}}"/>
+				</view>
+			</view>
+		</view>
+		<view class="btn-group">
+			<progress percent="{{current*100/total}}" color="green" stroke-width="1" class="percentage"/>
+			<view bindtap="goPrev" class="bottomBtn goPrev">上一页</view>
+			<view>{{current}}/{{total}}</view>
+			<view bindtap="goNext" class="bottomBtn goNext">下一页</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,150 @@
+@import "../../common/wxss/main.wxss"
+.dle .dle-body{
+	width:100%;
+	padding-top: 35px
+}
+.home{
+	width:100%;
+}
+.home .subject4 .selection,.home .subject1 .selection{
+	display:flex;
+	flex-wrap: wrap;
+	width:100%;
+}
+.home .subject-title{
+	text-align:left;
+	position: relative;
+	padding-left:10%;
+	height:25px;
+	font-size:18px;
+	font-weight:bolder;
+	padding-top:20px;
+	background-color: #f6f6f6
+}
+.home .subject{
+	/*margin-bottom: 50rpx;*/
+	position: relative;
+}
+.home .e_selection{
+	width:50%;
+	text-align: center;
+	background-color:#f0f0f0;
+	position: relative;
+
+}
+.home .selection{
+	background-color:#f0f0f0;
+	padding-top:1px;
+}
+.home .s1 .inner,.home .s3 .inner{
+	margin-right:1px;
+	margin-bottom:1px;
+	background-color:white;
+}
+.home .s2 .inner,.home .s4 .inner{
+	margin-bottom:1px;
+	background-color:white;
+}
+.home .inner{
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	font-weight: bolder;
+}
+.home .inner .logo{
+	background-size:100%;
+	height:20px;
+	width:20px;
+	display:block;
+	position: absolute;
+	top:22%;
+	left:18%;
+}
+.home .s1 .inner .logo{
+	background-image:url(https://www.wxapp-gateway.com/image/order.png);
+}
+.home .s2 .inner .logo{
+	background-image: url(https://www.wxapp-gateway.com/image/rand.png)
+}
+.home .s3 .inner .logo{
+	background-image: url(https://www.wxapp-gateway.com/image/error.png)
+}
+.home .s4 .inner .logo{
+	background-image: url(https://www.wxapp-gateway.com/image/download.png)
+}
+
+.home .logo-subject{
+	background-size:100%;
+	height:19px;
+	width:19px;
+	display:block;
+	position: absolute;
+	top:20px;
+	left:3%;
+	z-index: 100;
+
+}
+.home .e1 .logo-subject{
+	background-image:url(https://www.wxapp-gateway.com/image/e1.png);
+}
+.home .e2 .logo-subject{
+	background-image:url(https://www.wxapp-gateway.com/image/e2.png);
+}
+.home .e3 .logo-subject{
+	background-image:url(https://www.wxapp-gateway.com/image/e3.png);
+}
+.home .e4 .logo-subject{
+	background-image:url(https://www.wxapp-gateway.com/image/e4.png);
+}
+.home .cfg-logo{
+	background-image:url(https://www.wxapp-gateway.com/image/config_h.png);
+	background-size:100%;
+	height:20px;
+	width:20px;
+	display:block;
+	position: absolute;
+	top:15%;
+	right:3%;
+}
+.home .scroll-wrapper{
+	width:100%;
+	height:130px;
+	overflow: scroll;
+	border-top:1px solid #f0f0f0;
+	border-bottom:1px solid #f0f0f0;
+	/*white-space: nowrap;*/
+	/*display: flex;*/
+}
+.home .scroll-inner{
+	width:100%;
+	width:1000px;
+}
+.home .scroll-item{
+	width:150px;
+	/*border:1px solid red;*/
+	float:left;
+	z-index:1;
+	padding:10px;
+	position: relative;
+	/*display: inline-block;*/
+	/*clear:right;*/
+	/*flex-wrap: nowrap;*/
+	/*display:inline-block;*/
+}
+.home .image{
+	width:150px;
+	height:100px;
+}
+.home .play-logo{
+    border-top: 15px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    z-index: 100;
+    top: 45px;
+    left:75px;
+}
+.home .recordMsg{
+	display:inline-block;
+	font-size:13px;
+}

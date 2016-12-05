@@ -1,0 +1,13 @@
+@import "../../common/wxss/main.wxss"
+.finish .header .title-left{
+	text-align: left;
+}
+.finish .header .title-center{
+	text-align: center;
+}
+.finish .header .title-right{
+	text-align: right;
+}
+.finish .header{
+	justify-content:space-between;
+}

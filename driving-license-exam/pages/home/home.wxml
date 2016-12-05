@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<import src="../../component/scroll.wxml"/>
+<view class="dle">
+  <view class="home">
+    <view class="header">
+      <view class="title-left header-item" ></view>
+      <view class="title-center header-item" >首页</view>
+      <view class="title-right header-item" ><view class="cfg-logo"></view></view>
+    </view>
+    <view class="dle-body">
+      <view class="subject subject1 e1">
+        <view class="logo-subject"></view>
+        <view class="subject-title e1">
+          科目1
+          <block wx:if="{{e1Record}}">
+            <view class="recordMsg">完成情况{{e1Record.complete}}  正确率{{e1Record.correct}}</view>
+          </block>
+        </view>
+
+        <view class="selection">
+          <view bindtap="goTest" data-testType="order" data-subject="1" class="e_selection s1">
+            <view class="inner"><view class="logo"></view>
+              顺序学习
+            </view>
+          </view>
+          <view bindtap="goTest" data-testType="rand" data-subject="1" class="e_selection s2">
+            <view class="inner"><view class="logo"></view>
+              模拟考试
+            </view>
+          </view>
+          <view bindtap="goTest" data-testType="error" data-subject="1" class="e_selection s3">
+            <view class="inner"><view class="logo"></view>
+              错题本
+            </view>
+          </view>
+          <view bindtap="updateExam" data-subject="1" class="e_selection s4">
+            <view class="inner"><view class="logo"></view>
+              更新题库
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="subject subject2 e2">
+        <view class="logo-subject"></view>
+        <view bindtap="goVidio" data-subject="2" class="subject-title e2">科目2</view>
+        <view><template is="scroll-template" data="{{...examlist2}}"/></view>
+      </view>
+      <view class="subject subject3 e3">
+        <view class="logo-subject"></view>
+        <view bindtap="goVidio" data-subject="3" class="subject-title e3" >科目3</view>
+        <view><template is="scroll-template" data="{{...examlist3}}"/></view>
+      </view>
+      <view class="subject subject4 e4">
+        <view class="logo-subject"></view>
+        <view class="subject-title e4">
+         科目4
+         <block wx:if="{{e1Record}}">
+            <view class="recordMsg">完成情况{{e4Record.complete}}  正确率{{e4Record.correct}}</view>
+          </block>
+        </view>
+        <view  class="selection">
+          <view bindtap="goTest" data-testType="order" data-subject="4" class="e_selection s1">
+            <view class="inner"><view class="logo"></view>
+              顺序学习
+            </view>
+          </view>
+          <view bindtap="goTest" data-testType="rand" data-subject="4" class="e_selection s2">
+            <view class="inner"><view class="logo"></view>
+              模拟考试
+            </view>
+          </view>
+          <view bindtap="goTest" data-testType="error" data-subject="4" class="e_selection s3">
+            <view class="inner"><view class="logo"></view>
+              错题本
+            </view>
+          </view>
+          <view bindtap="updateExam" data-subject="4" class="e_selection s4">
+            <view class="inner"><view class="logo"></view>
+              更新题库
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="user-config">
+        <view class="config-title">用户设置</view>
+        <view class="config-gruop">
+          <view class="exam-model" bindtap="changeModel">考试车型 {{userModel}}</view>
+        </view>
+      </view>
+      <view class="clearCache btn btn-big" bindtap="clearCache">清空缓存</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/test/test",
+    "pages/finish/finish"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+  	"list":[
+  		{
+	  		"pagePath":"home/home.wxml",
+	  		"text":"科目1"
+  		},
+  		{
+	  		"pagePath":"home/home.wxml",
+	  		"text":"科目2"
+  		},
+  		{
+	  		"pagePath":"home/home.wxml",
+	  		"text":"科目3"
+  		},
+  		{
+	  		"pagePath":"home/home.wxml",
+	  		"text":"科目4"
+  		}
+  	]
+
+  }
+}
