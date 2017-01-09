@@ -2,7 +2,8 @@
   "pages":[
     "pages/home/home",
     "pages/test/test",
-    "pages/finish/finish"
+    "pages/finish/finish",
+    "pages/system/system"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,19 +14,19 @@
   "tabBar":{
   	"list":[
   		{
-	  		"pagePath":"home/home.wxml",
+	  		"pagePath":"home/home",
 	  		"text":"科目1"
   		},
   		{
-	  		"pagePath":"home/home.wxml",
+	  		"pagePath":"home/home",
 	  		"text":"科目2"
   		},
   		{
-	  		"pagePath":"home/home.wxml",
+	  		"pagePath":"home/home",
 	  		"text":"科目3"
   		},
   		{
-	  		"pagePath":"home/home.wxml",
+	  		"pagePath":"home/home",
 	  		"text":"科目4"
   		}
   	]

@@ -8,6 +8,11 @@ var app = getApp();
 Page({
   data: {
   },
+  goSystem:function(args){
+     wx.navigateTo({
+      url:"../system/system",
+    });
+  },
   goTest:function(args){
     console.log(args);
     var testParam = args.currentTarget.dataset;
@@ -32,19 +37,6 @@ Page({
      var subject=updateParam.subject;
      var model = wxService.getStorage(constant.storageKey.userModel);
      examService.queryAndSaveExam(subject,model);
-  },
-  clearCache:function(){
-    wxService.clearStorage();
-    this.onLoad();
-  },
-  changeModel:function(){//修改用户的考试车型
-    var context = this;
-    wx.showActionSheet({
-      itemList:constant.models,
-      success:function(result){
-        _fn.changeModelSuccess(result,context);
-      }
-    });
   },
   //事件处理函数
   onLoad: function () {

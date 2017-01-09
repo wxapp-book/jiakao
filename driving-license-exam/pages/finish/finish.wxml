@@ -2,6 +2,9 @@
 
 <view class="dle">
 	<view class="finish">
+		<block wx:if="{{noReocrd}}">
+			没有数据
+		</block>
 		<view class="header">
 			<view class="title-left header-item" bindtap="goHome">去首页</view>
 			<view class="title-center header-item">{{model}} 科目{{subject}} {{testType}}</view>

@@ -5,7 +5,12 @@
 		<view class="header">
 			<view class="title-left header-item" ></view>
 			<view class="title-center header-item" >{{testModel}} 科目{{testSubject}} {{testType}}</view>
-			<view class="title-right header-item go-finish" bindtap="goFinish" >结束</view>
+			<block wx:if="{{isFinish}}">
+				<view class="title-right header-item go-finish" bindtap="goFinish" >结束</view>
+			</block>
+			<block wx:else>
+				<view class="title-right header-item"  ></view>
+			</block>
 		</view>
 		<view class="dle-body">
 			<view class="test">

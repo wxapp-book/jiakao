@@ -1,7 +1,7 @@
 <template name="scroll-template">
 	<view class="wrapper scroll-wrapper">
 		<view class="scroll-inner">
-			<block wx:for="{{items}}" wx:for-item="video">
+			<block wx:for="{{items}}" wx:for-item="video" wx:key="1">
 				<view class="scroll-item" data-vedio-src="{{video.videoSrc}}" bingtap="goVideo">
 					<view class="play-logo"></view>
 					<view class="mask" style = "width:150px;height:100px;background-color:rgba(0,0,0,0.6);position: absolute;)"></view>

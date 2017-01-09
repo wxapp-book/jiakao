@@ -424,6 +424,7 @@ render = {
     newRenderData[showPageName]=showPageData;
     newRenderData.total = curQuestionObj.total;//更新页码数据
     newRenderData.current = curQuestionObj.current;
+    newRenderData.isFinish = curQuestionObj.total===curQuestionObj.current?true:false;
     us.last(getCurrentPages()).setData(newRenderData);//渲染
     return true;
   },
