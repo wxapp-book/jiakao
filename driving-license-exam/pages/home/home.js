@@ -7,6 +7,7 @@ var us = require("../../lib/underscore.js");
 var app = getApp();
 Page({
   data: {
+    firstRender:[]
   },
   goSystem:function(args){
      wx.navigateTo({
@@ -46,9 +47,15 @@ Page({
       examlist2:{items:constant.exam2},
       examlist3:{items:constant.exam3}
     };
-    console.log(111,data);
     this.setData(data);
     initSystem.init(this);
+  },
+  goVideo:function(args){
+    var videoSrc = args.currentTarget.dataset.videosrc;
+    var paramStr = '?videoSrc='+ encodeURIComponent(videoSrc);
+    wx.navigateTo({
+      url:'../video/video'+paramStr
+    });
   }
 });
 

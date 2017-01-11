@@ -5,16 +5,33 @@
 		<block wx:if="{{noReocrd}}">
 			没有数据
 		</block>
-		<view class="header">
-			<view class="title-left header-item" bindtap="goHome">去首页</view>
-			<view class="title-center header-item">{{model}} 科目{{subject}} {{testType}}</view>
-			<view class="title-right header-item" bindtap="goCheckError">查看错题</view>
-		</view>
 		<view class="dle-body">
 			<view class="finish">
-				<view class="total">您答对了{{total}}道题中的{{correct}}道</view>
-				<view class="percentage">正确率为{{percentage}}</view>
-				<view class="title">您的封号为{{title}}</view>
+				<view class="header-wrapper">
+					<view class="header-left">
+						<view class="title-model">{{model}}</view>
+					</view>
+					<view class="header-right">
+						<view class="title-subject">科目{{subject}}</view>
+						<view class="title-testType">{{testType}}</view>
+					</view>
+				</view>
+				<view class="result-wrapper">
+					<block wx:if="{{isGood}}">
+						<view class="good-driver driver-img" ></view>
+						<view class="driver-name">老司机</view>
+					</block>
+					<block wx:else>
+						<view class="bad-driver driver-img"></view>
+						<view class="driver-name">马路杀手</view>
+					</block>
+					<view class="total">您答对了{{total}}道题中的{{correct}}道</view>
+					<view class="percentage">正确率为<text class="value">{{percentage}}</text></view>
+				</view>
+				<view class="btn-wrapper">
+					<view class="title-left header-item btn goHome" bindtap="goHome">去首页</view>
+					<view class="title-right header-item btn goCheckError" bindtap="goCheckError">查看错题</view>
+				</view>
 			</view>
 		</view>
 	</view>

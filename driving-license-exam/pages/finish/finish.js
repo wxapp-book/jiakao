@@ -50,7 +50,7 @@ var _fn = {
         model : param.model,
         subject : param.subject,
         testType: param.testType==='rand'?"随机测试":"顺序学习",
-        title:_fn.getTitle(param.testType,percentage),//给用户一个总结语
+        isGood:(correctNum * 100 / total).toFixed(2)>90?true:false,
         total:total,
         percentage:percentage,
         correct:correctNum,

@@ -3,6 +3,7 @@
     "pages/home/home",
     "pages/test/test",
     "pages/finish/finish",
+    "pages/video/video",
     "pages/system/system"
   ],
   "window":{

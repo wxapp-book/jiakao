@@ -54,7 +54,7 @@
         <view class="logo-subject"></view>
         <view class="subject-title e4">
          科目4
-         <block wx:if="{{e1Record}}">
+         <block wx:if="{{e4Record}}">
             <view class="recordMsg">完成情况{{e4Record.complete}}  正确率{{e4Record.correct}}</view>
           </block>
         </view>

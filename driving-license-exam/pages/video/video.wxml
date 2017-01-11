@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+  	<video src="{{videoSrc}}" autoplay="true"></video>
+  </view>
+</view>

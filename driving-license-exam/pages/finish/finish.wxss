@@ -1,13 +1,78 @@
 @import "../../common/wxss/main.wxss"
-.finish .header .title-left{
-	text-align: left;
+.finish{
+	padding:0px 25px;
+
 }
-.finish .header .title-center{
+.finish .header-wrapper{
+	display:flex;
+	border-bottom: 2px solid black;
+	padding-bottom:3px;
+
+}
+.finish .header-left{
+	font-size:40px;
+}
+.finish .header-right{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.finish .good-driver{
+	background-image:url(https://www.wxapp-gateway.com/image/good-driver.jpg);
+}
+.finish .bad-driver{
+	background-image:url(https://www.wxapp-gateway.com/image/bad-driver.jpg);
+}
+.finish .driver-img{
+	height:400rpx;
+	width:400rpx;
+	background-repeat:no-repeat;
+	margin:auto;
+	background-size:70% 80%;
+	background-position:center center;
+
+}
+.finish .driver-name{
+	color: #ff4453;
+	font-size:40px;
+	text-align:center;
+	font-weight: bold;
+}
+.finish .total{
+	font-size:45rpx;
+	text-align:center;
+	margin-top:85rpx;
+
+}
+.finish .percentage{
+	font-size:45rpx;
+	text-align:center;
+
+}
+.finish .percentage.value{
+	color:#ec4370;
+}
+.finish .btn-wrapper{
+	margin-top:110rpx;
+	display:flex;
+	padding:0 ;
+	margin-left:20rpx;
+	margin-right:20rpx;
+	justify-content: space-between;
+}
+.finish .btn{
+	padding:20rpx;
+	border-radius:5px;
+	width:200rpx;
 	text-align: center;
 }
-.finish .header .title-right{
-	text-align: right;
+.finish .goHome{
+	border:1px solid black;
 }
-.finish .header{
-	justify-content:space-between;
+.finish .goCheckError{
+	background-color:#ffb600;
+	color:white;
+
 }
+
