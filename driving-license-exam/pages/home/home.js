@@ -6,9 +6,6 @@ var us = require("../../lib/underscore.js");
 
 var app = getApp();
 Page({
-  data: {
-    firstRender:[]
-  },
   goSystem:function(args){
      wx.navigateTo({
       url:"../system/system",
@@ -19,7 +16,7 @@ Page({
     var testParam = args.currentTarget.dataset;
     var testType = testParam.testtype;
     var subject=testParam.subject;
-    var model=wxService.getStorage(constant.storageKey.userModel);
+    var model=wxService.getStorage(constant.storageKey.userModel)||'c1';
     var inCorrect=us.compact(examService.readExamRecord({
       model:model,
       subject:subject
