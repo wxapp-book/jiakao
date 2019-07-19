@@ -1,0 +1,10 @@
+@import "../../common/wxss/main.wxss";
+
+.config-title{
+  text-align: center;
+  font-size: 20px;
+}
+.config-group{
+  padding: 20px;
+  color:green;
+}

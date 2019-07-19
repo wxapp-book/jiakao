@@ -23,7 +23,7 @@
 			</view>
 		</view>
 		<view class="btn-group">
-			<progress percent="{{current*100/total}}" color="green" stroke-width="1" class="percentage"/>
+			<progress percent="{{current*100/total}}" color="green" stroke-width="3" class="percentage"/>
 			<view bindtap="goPrev" class="bottomBtn goPrev">上一页</view>
 			<view>{{current}}/{{total}}</view>
 			<view bindtap="goNext" class="bottomBtn goNext">下一页</view>

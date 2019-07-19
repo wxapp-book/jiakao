@@ -1,36 +1,15 @@
 {
-  "pages":[
-    "pages/home/home",
+  "pages": [
+    "pages/index/index",
     "pages/test/test",
     "pages/finish/finish",
-    "pages/video/video",
-    "pages/system/system"
+    "pages/system/system",
+    "pages/video/video"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  },
-  "tabBar":{
-  	"list":[
-  		{
-	  		"pagePath":"home/home",
-	  		"text":"科目1"
-  		},
-  		{
-	  		"pagePath":"home/home",
-	  		"text":"科目2"
-  		},
-  		{
-	  		"pagePath":"home/home",
-	  		"text":"科目3"
-  		},
-  		{
-	  		"pagePath":"home/home",
-	  		"text":"科目4"
-  		}
-  	]
-
+    "navigationBarTitleText": "驾考",
+    "navigationBarTextStyle": "black"
   }
 }

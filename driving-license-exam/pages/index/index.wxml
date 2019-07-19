@@ -1,10 +1,9 @@
-<!--index.wxml-->
 <import src="../../component/scroll.wxml"/>
 <view class="dle">
   <view class="home">
     <view class="header">
       <view class="title-left header-item" ></view>
-      <view class="title-center header-item" >首页</view>
+      <view class="title-center header-item" >{{title}}</view>
       <view class="title-right header-item" bindtap="goSystem"><view class="cfg-logo"></view></view>
     </view>
     <view class="dle-body">
@@ -44,36 +43,14 @@
         <view class="logo-subject"></view>
         <view bindtap="goVidio" data-subject="2" class="subject-title e2">科目2</view>
         <view>
-          <view class="wrapper scroll-wrapper">
-            <view class="scroll-inner">
-              <!-- <block wx:for="{{items}}" wx:for-item="video" wx:key="1"> -->
-              <block wx:for="{{examlist2.items}}" wx:for-item="video" wx:key="1">
-                <view class="scroll-item" data-videoSrc="{{video.videoSrc}}" bindtap="goVideo">
-                  <view class="play-logo"  ></view>
-                  <view class="mask" style = "width:150px;height:100px;background-color:rgba(0,0,0,0.6);position: absolute;)"></view>
-                  <image style="width:150px;height:100px" src="{{video.videoImgSrc}}" mode="aspectFit"  ></image>
-                </view>
-              </block>
-            </view>
-          </view>
+	        <template is="scroll-template" data="{{...examlist2}}"/>
         </view>
       </view>
       <view class="subject subject3 e3">
         <view class="logo-subject"></view>
         <view bindtap="goVidio" data-subject="3" class="subject-title e3" >科目3</view>
         <view>
-          <view class="wrapper scroll-wrapper">
-            <view class="scroll-inner">
-              <!-- <block wx:for="{{items}}" wx:for-item="video" wx:key="1"> -->
-              <block wx:for="{{examlist3.items}}" wx:for-item="video" wx:key="1">
-                <view class="scroll-item" data-videoSrc="{{video.videoSrc}}" bindtap="goVideo">
-                  <view class="play-logo"  ></view>
-                  <view class="mask" style = "width:150px;height:100px;background-color:rgba(0,0,0,0.6);position: absolute;)"></view>
-                  <image style="width:150px;height:100px" src="{{video.videoImgSrc}}" mode="aspectFit"  ></image>
-                </view>
-              </block>
-            </view>
-          </view>
+        	<template is="scroll-template" data="{{...examlist3}}"/>
         </view>
       </view>
       <view class="subject subject4 e4">
@@ -107,8 +84,6 @@
           </view>
         </view>
       </view>
-
-      
     </view>
   </view>
 </view>

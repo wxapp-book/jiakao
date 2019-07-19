@@ -1,0 +1,147 @@
+@import "../../common/wxss/main.wxss";
+
+.dle .dle-body{
+	width:100%;
+	padding-top: 35px
+}
+.home{
+	width:100%;
+}
+.home .subject4 .selection,.home .subject1 .selection{
+	display:flex;
+	flex-wrap: wrap;
+	width:100%;
+}
+.home .subject-title{
+	text-align:left;
+	position: relative;
+	padding-left:10%;
+	height:25px;
+	font-size:18px;
+	font-weight:bolder;
+	padding-top:20px;
+	background-color: #f6f6f6
+}
+.home .subject{
+	/*margin-bottom: 50rpx;*/
+	position: relative;
+}
+.home .e_selection{
+	width:50%;
+	text-align: center;
+	background-color:#f0f0f0;
+	position: relative;
+
+}
+.home .selection{
+	background-color:#f0f0f0;
+	padding-top:1px;
+}
+.home .s1 .inner,.home .s3 .inner{
+	margin-right:1px;
+	margin-bottom:1px;
+	background-color:white;
+}
+.home .s2 .inner,.home .s4 .inner{
+	margin-bottom:1px;
+	background-color:white;
+}
+.home .inner{
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	font-weight: bolder;
+}
+.home .inner .logo{
+	background-size:100%;
+	height:20px;
+	width:20px;
+	display:block;
+	position: absolute;
+	top:22%;
+	left:18%;
+}
+.home .s1 .inner .logo{
+	background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278092&di=a1b81eba59050918cf706c3d3dfa7c50&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F01%2F38%2F05%2F14573c7027e4a55.jpg); 
+}
+.home .s2 .inner .logo{
+	background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278090&di=bc0f24d70124d220ec303a45bc3b482f&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F01%2F49%2F81%2F8757448741d6b40.jpg) 
+}
+.home .s3 .inner .logo{
+	background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278088&di=3a2d93835c6267ead0bb71019c90919b&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F01%2F47%2F03%2F46574339c2da383.jpg) 
+}
+.home .s4 .inner .logo{
+	background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278088&di=ab981506afaee7b204b4d618ccda3b5e&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F01%2F39%2F25%2F28573cb2f76d7c2.jpg) 
+}
+
+.home .logo-subject{
+	background-size:100%;
+	height:19px;
+	width:19px;
+	display:block;
+	position: absolute;
+	top:20px;
+	left:3%;
+	z-index: 100;
+
+}
+.home .e1 .logo-subject{
+	background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278092&di=84ddc3d2d9ec570512fcc2ad9d3b2bdd&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F01%2F48%2F06%2F95574411cc2434a.jpg); 
+}
+.home .e2 .logo-subject{
+	background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278092&di=2178f4b781c2a5db96ce1ae99374a2a7&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F01%2F34%2F85%2F67573bc4ac6b1ab.jpg); 
+}
+.home .e3 .logo-subject{
+	background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278093&di=509cc93e7eefae25f04e2da0c9ab2d2b&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F49%2F81%2F695744871999d35.jpg); 
+}
+.home .e4 .logo-subject{
+	background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278093&di=bdb02046e04c2be2b6e78ae176b86153&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F34%2F84%2F79573bc42e081c1.jpg); 
+}
+.home .cfg-logo{
+	background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563276278095&di=2561b098c2dc52cff29b74124bb8b930&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F01%2F40%2F21%2F92573cf08d1c6be.jpg); 
+	background-size:100%;
+	height:20px;
+	width:20px;
+	display:block;
+	position: absolute;
+	top:15%;
+	right:3%;
+}
+.home .scroll-wrapper{
+	width:100%;
+	height:130px;
+	overflow: scroll;
+	border-top:1px solid #f0f0f0;
+	border-bottom:1px solid #f0f0f0;
+	/*white-space: nowrap;*/
+	/*display: flex;*/
+}
+.home .scroll-item{
+	width:150px;
+	/*border:1px solid red;*/
+	float:left;
+	z-index:1;
+	padding:10px;
+	position: relative;
+	/*display: inline-block;*/
+	/*clear:right;*/
+	/*flex-wrap: nowrap;*/
+	/*display:inline-block;*/
+}
+.home .image{
+	width:150px;
+	height:100px;
+}
+.home .play-logo{
+    border-top: 15px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    z-index: 100;
+    top: 45px;
+    left:75px;
+}
+.home .recordMsg{
+	display:inline-block;
+	font-size:13px;
+}

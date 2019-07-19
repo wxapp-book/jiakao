@@ -8,11 +8,11 @@
     <view class="dle-body">
 		<view class="user-config">
 			<view class="config-title">用户设置</view>
-				<view class="config-gruop">
+				<view class="config-group">
 				  <view class="exam-model" bindtap="changeModel">考试车型 {{userModel}}</view>
 				</view>
 			</view>
-		<view class="clearCache btn btn-big" bindtap="clearCache">清空缓存</view>
+		<view class="config-group" bindtap="clearCache">清空缓存</view>
 	</view>
   </view>
  </view>
